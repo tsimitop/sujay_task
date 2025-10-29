@@ -9,5 +9,7 @@ public class DemoApplication {
 	static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
 	}
-// jdbc:h2:mem:testdb for testing on the browser
+    // for testing on the browser:
+    // jdbc:h2:mem:testdb (in-memory)
+    // jdbc:h2:file:/data/testdb (filebased)
 }

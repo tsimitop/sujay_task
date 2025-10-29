@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    container_name: springboot-h2-app
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./h2data:/data
+    environment:
+      SPRING_H2_CONSOLE_ENABLED: "true"
+    restart: unless-stopped
+
+
