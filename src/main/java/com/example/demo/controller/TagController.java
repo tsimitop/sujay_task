@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.model.Tag;
 import com.example.demo.service.TagService;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -26,12 +27,12 @@ public class TagController {
     }
 
     @PostMapping
-    public Tag createTag(@RequestBody Tag tag) {
+    public Tag createTag(@Valid @RequestBody Tag tag) {
         return tagService.createTag(tag);
     }
 
     @PutMapping("/{id}")
-    public Tag updateTag(@PathVariable Long id, @RequestBody Tag tag) {
+    public Tag updateTag(@PathVariable Long id, @Valid @RequestBody Tag tag) {
         return tagService.updateTag(id, tag);
     }
 

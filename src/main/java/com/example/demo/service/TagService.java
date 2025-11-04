@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import com.example.demo.exception.ResourceNotFoundException;
 import com.example.demo.model.Tag;
 import com.example.demo.repository.TagRepository;
 import org.springframework.stereotype.Service;
@@ -19,7 +20,8 @@ public class TagService {
     }
 
     public Tag getTagById(Long id) {
-        return tagRepository.findById(id).orElse(null);
+        return tagRepository.findById(id).orElseThrow(() ->
+                new ResourceNotFoundException("Tag not found with id " + id));
     }
 
     public Tag createTag(Tag tag) {
@@ -27,16 +29,19 @@ public class TagService {
     }
 
     public Tag updateTag(Long id, Tag updatedTag) {
-        Tag existing = tagRepository.findById(id).orElse(null);
-        if (existing != null) {
-            existing.setTitle(updatedTag.getTitle());
-            existing.setDescription((updatedTag.getDescription()));
-            return tagRepository.save(existing);
-        }
-        return null;
+        Tag existing = tagRepository.findById(id).orElseThrow(() ->
+                new ResourceNotFoundException("Tag not found with id " + id));
+
+        existing.setTitle(updatedTag.getTitle());
+        existing.setDescription((updatedTag.getDescription()));
+
+        return tagRepository.save(existing);
     }
 
     public void deleteTag(Long id) {
+        if (!tagRepository.existsById(id)) {
+            throw new ResourceNotFoundException("Tag not found with id " + id);
+        }
         tagRepository.deleteById(id);
     }
 }
