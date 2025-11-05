@@ -1,0 +1,169 @@
+openapi: 3.0.1
+info:
+  title: OpenAPI definition
+  version: v0
+servers:
+  - url: http://localhost:8080
+    description: Generated server url
+tags:
+  - name: Tag API
+    description: CRUD operations for Tag entities
+paths:
+  /api/tags/{id}:
+    get:
+      tags:
+        - Tag API
+      operationId: getTagById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
+                additionalProperties:
+                  type: string
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/Tag"
+    put:
+      tags:
+        - Tag API
+      operationId: updateTag
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Tag"
+        required: true
+      responses:
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
+                additionalProperties:
+                  type: string
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/Tag"
+    delete:
+      tags:
+        - Tag API
+      operationId: deleteTag
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
+                additionalProperties:
+                  type: string
+        "200":
+          description: OK
+  /api/tags:
+    get:
+      tags:
+        - Tag API
+      operationId: getAllTags
+      responses:
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
+                additionalProperties:
+                  type: string
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Tag"
+    post:
+      tags:
+        - Tag API
+      operationId: createTag
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Tag"
+        required: true
+      responses:
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                type: object
+                additionalProperties:
+                  type: string
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/Tag"
+components:
+  schemas:
+    Tag:
+      required:
+        - description
+        - title
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Unique identifier
+          format: int64
+          example: 1
+        title:
+          type: string
+          description: Tag title
+          example: Important
+        description:
+          type: string
+          description: Tag description
+          example: Used to mark high-priority tasks
+        createdAt:
+          type: string
+          description: Creation timestamp
+          format: date-time
+        updatedAt:
+          type: string
+          description: Last update timestamp
+          format: date-time
+      description: Represents a tag in the system.

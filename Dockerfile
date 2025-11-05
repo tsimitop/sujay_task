@@ -1,7 +1,7 @@
 # =========================
 #      Build the app
 # =========================
-FROM maven:3.9.11-eclipse-temurin-25 AS builder
+FROM maven:3.9.11-eclipse-temurin-21 AS builder
 WORKDIR /app
 
 # Copy Maven project files
@@ -14,7 +14,7 @@ RUN mvn clean package -DskipTests
 # =========================
 #       Run the app
 # =========================
-FROM eclipse-temurin:25-jdk
+FROM eclipse-temurin:21-jdk
 WORKDIR /app
 
 # Copy JAR from the builder image
