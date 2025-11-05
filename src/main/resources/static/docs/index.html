@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>API Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Load Redoc standalone bundle -->
+    <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        #redoc-container {
+          height: 100vh;
+        }
+    </style>
+
+</head>
+<body>
+<!-- Redoc renders inside this div -->
+<div id="redoc-container"></div>
+
+<script>
+    // Initialize Redoc once script loads
+    Redoc.init('/docs/openapi.yaml', {}, document.getElementById('redoc-container'));
+</script>
+</body>
+</html>
