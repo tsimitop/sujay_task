@@ -4,12 +4,13 @@
 FROM maven:3.9.11-eclipse-temurin-21 AS builder
 WORKDIR /app
 
-# Copy Maven project files
+# Copy the entire Maven project (parent + modules)
 COPY pom.xml .
-COPY src ./src
+COPY api-spec ./api-spec
+COPY demo ./demo
 
-# Build without running tests
-RUN mvn clean package -DskipTests
+# Build the whole project, skipping tests
+RUN mvn -f pom.xml clean package -DskipTests
 
 # =========================
 #       Run the app
@@ -17,11 +18,8 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:21-jdk
 WORKDIR /app
 
-# Copy JAR from the builder image
-COPY --from=builder /app/target/*.jar app.jar
+# Copy the final built JAR from the demo module
+COPY --from=builder /app/demo/target/*.jar app.jar
 
-# Expose Spring Boot’s default port
 EXPOSE 8080
-
-# Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
