@@ -1,7 +1,9 @@
 services:
-  app:
-    build: .
-    container_name: springboot-h2-app
+  tag-management-demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tag-management-demo
     ports:
       - "8080:8080"
     volumes:
@@ -9,5 +11,3 @@ services:
     environment:
       SPRING_H2_CONSOLE_ENABLED: "true"
     restart: unless-stopped
-
-

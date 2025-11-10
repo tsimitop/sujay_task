@@ -7,9 +7,12 @@ build:
 	$(DOCKER_COMPOSE) build
 
 # Build the Docker image and run the container
-build-run: build
+run:
 	@echo "Starting container..."
 	$(DOCKER_COMPOSE) up -d
+
+# Build the Docker image and run the container
+build-run: build run
 
 # Stop the container
 down:

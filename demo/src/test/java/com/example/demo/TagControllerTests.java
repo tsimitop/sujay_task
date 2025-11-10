@@ -79,7 +79,6 @@ public class TagControllerTests {
                                                        t.getDescription().equals("I am a new Tag")));
     }
 
-
     @Test
     void testPostForInvalidPath() throws Exception {
         String newTagJson = """
