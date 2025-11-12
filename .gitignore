@@ -37,6 +37,7 @@ build/
 h2data
 testdb.mv.dbs
 testdb.trace.db
+authdb.mv.db
 
 ### secrets ###
 *.pem
