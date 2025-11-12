@@ -85,7 +85,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${project.build.outputDirectory}/docs</outputDirectory>
+                            <outputDirectory>target/classes/docs</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>${project.parent.basedir}/api-spec/src/main/resources</directory>

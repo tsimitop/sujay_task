@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-spec" target="21" />
+      <module name="auth-api" target="25" />
+      <module name="auth-module" target="25" />
+      <module name="demo" target="21" />
+      <module name="user-auth" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-spec" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="microservices" options="" />
+      <module name="user-auth" options="-parameters" />
+    </option>
+  </component>
+</project>

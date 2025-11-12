@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2c403e55-3663-4a78-a705-e2cfcad612fc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/auth-user/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-user/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-user/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-user/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-user/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-user/auth-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-user/auth-module/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-user/auth-module/src/main/java/com/example/model/Auth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tag-service/demo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tag-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-spec/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/api-spec/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-spec/src/main/resources/openapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/api-spec/src/main/resources/openapi.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-user/auth-module/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/DocsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/src/main/java/com/example/demo/controller/DocsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/TagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/src/main/java/com/example/demo/controller/TagController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/src/main/java/com/example/demo/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/src/main/java/com/example/demo/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/model/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/src/main/java/com/example/demo/model/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/repository/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/src/main/java/com/example/demo/repository/TagRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/src/main/java/com/example/demo/service/TagService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/static/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/src/main/resources/static/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/static/docs/openapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/src/main/resources/static/docs/openapi.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/TagControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/src/test/java/com/example/demo/TagControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/demo/src/test/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tag-service/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="3562m38O2uFj58qFHzsIxN3Psxq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;8-authentication&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/thalia/Documents/api_documentation&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/thalia/Documents/api_documentation/auth_api/src/main/java/com/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/auth-user/auth-module" />
+      <recent name="$PROJECT_DIR$/auth-user/auth-api" />
+      <recent name="$PROJECT_DIR$/auth-user" />
+      <recent name="$PROJECT_DIR$/demo" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/auth-user" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/microservices/tag-service" />
+      <recent name="$PROJECT_DIR$/microservices" />
+      <recent name="$PROJECT_DIR$/demo" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="api_documentation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="api_documentation" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c403e55-3663-4a78-a705-e2cfcad612fc" name="Changes" comment="" />
+      <created>1762416355330</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762416355330</updated>
+    </task>
+    <servers />
+  </component>
+</project>
