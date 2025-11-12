@@ -5,6 +5,13 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.0</version>
+        <relativePath/>
+    </parent>
+
     <groupId>com.example</groupId>
     <artifactId>auth-user-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -26,40 +33,36 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring.boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>0.11.5</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-impl</artifactId>
+                <version>0.11.5</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-jackson</artifactId>
+                <version>0.11.5</version>
+                <scope>runtime</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
 
-    <repositories>
-        <repository>
-            <id>central</id>
-            <name>Maven Central Repository</name>
-            <url>https://repo1.maven.org/maven2/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>central</id>
-            <url>https://repo1.maven.org/maven2/</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>openapitools</id>
-            <name>OpenAPI Tools Maven Plugin Repository</name>
-            <url>https://repo1.maven.org/maven2/</url>
-        </pluginRepository>
-    </pluginRepositories>
+<!--    <pluginRepositories>-->
+<!--        <pluginRepository>-->
+<!--            <id>central</id>-->
+<!--            <url>https://repo1.maven.org/maven2/</url>-->
+<!--        </pluginRepository>-->
+<!--        <pluginRepository>-->
+<!--            <id>openapitools</id>-->
+<!--            <name>OpenAPI Tools Maven Plugin Repository</name>-->
+<!--            <url>https://repo1.maven.org/maven2/</url>-->
+<!--        </pluginRepository>-->
+<!--    </pluginRepositories>-->
 
     <build>
         <pluginManagement>
@@ -69,15 +72,10 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.11.0</version>
                     <configuration>
-                        <source>${java.version}</source>
-                        <target>${java.version}</target>
-                        <compilerArgs>
-                            <arg>-parameters</arg>
-                        </compilerArgs>
+                        <release>${java.version}</release>
                     </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
     </build>
-
 </project>
